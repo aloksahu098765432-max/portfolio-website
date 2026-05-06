@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+section{
+    width:80%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+.skills ul{
+    list-style:none;
+}
+
+.skills li{
+    background:#222;
+    color:white;
+    display:inline-block;
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+}
+
+.project-card{
+    background:#eee;
+    padding:15px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:12px;
+    margin-bottom:15px;
+}
+
+button{
+    background:#222;
+    color:white;
+    padding:12px;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#444;
+}
+
+@media(max-width:768px){
+
+    section{
+        width:95%;
+    }
+
+    header{
+        padding:25px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .skills li{
+        display:block;
+        margin:10px 0;
+        text-align:center;
+    }
+
+    input,
+    textarea,
+    button{
+        width:100%;
+    }
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Alok Sahu</h1>
+
+        <p>Full Stack Developer</p>
+
+    </header>
+
+    <section class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a BCA student passionate about Full Stack Development,
+            Python, Flask, HTML, CSS, and JavaScript.
+        </p>
+
+    </section>
+
+    <section class="skills">
+
+        <h2>Skills</h2>
+
+        <ul>
+
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>SQLite</li>
+
+        </ul>
+
+    </section>
+
+    <section class="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>BizPredict Pro</h3>
+
+            <p>
+                Business analytics and prediction system using Flask and SQLite.
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+            <h3>Landing Page</h3>
+
+            <p>
+                Responsive landing page built using HTML and CSS.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="contact">
+
+        <h2>Contact Me</h2>
+
+        <form action="/contact" method="POST">
+
+            <input type="text" name="name" placeholder="Enter Name" required>
+
+            <input type="email" name="email" placeholder="Enter Email" required>
+
+            <textarea name="message" placeholder="Enter Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
